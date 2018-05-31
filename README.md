@@ -1,5 +1,4 @@
-# HiCDB – user guide
-Authors: Fengling Chen，Guipeng Li
+# RHiCDB – user guide
 ## Overview
 &emsp;&emsp;RHiCDB is an open-source R package based on HiCDB methods that detects the contact domain boundaries (CDBs) from Hi-C contact matrix. RHiCDB function takes raw or normalized contact matrix and outputs conservation annotated CDBs or differential CDBs. visHiCDB function takes raw or normalized contact matrix and HiCDB results and outputs visualization of CDBs on single Hi-C map or differential CDBs on two Hi-C maps. HiCDB are also implemented as [MATLAB version](https://github.com/ChenFengling/HiCDB).  
 &emsp;&emsp;Here is the general features of HiCDB.  
