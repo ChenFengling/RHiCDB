@@ -97,7 +97,7 @@ RHiCDB(list(c("sample1_rep1","sample1_rep2"),c("sample2_rep1","sample2_rep2")),1
 **2. localmax.txt:** all the local maximum peaks detected before cutoff decision. User can decide custom CDB cutoff upon this file.  
 **3. EScurve.png:** CTCF motif enrichment on ranked local maximum peaks.  
 These output files can be found in custom output directory or default directory namely the directory of the first sample.      
-**4. aRI.txt:** average RI score for each  genomic bin.
+**4. aRI.txt:** average RI score for each  genomic bin.  
 **5. LRI.txt:** LRI score for each genomic bin.
 ## 2. Run visHiCDB
 ### Input
