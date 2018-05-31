@@ -38,7 +38,7 @@ startloc=67100000
 endloc=71100000
 visHiCDB(hicfile,CDBfile,resolution,chr,startloc,endloc,outdir)
 ```
-You will get this output in 17_67100000_71100000_HiCmap.pdf. The dot is CDB detected(light blue:not conserved CDB;dark blue:conserved CDB)  
+You will get this output in 17_67100000_71100000_HiCmap.pdf. The dot is CDB detected(dark blue:consistently detected CDBs; light blue:other CDBs)  
 <div align=center><img width="500" height="500" src="https://github.com/ChenFengling/RHiCDB/blob/master/images/17_67100000_71100000_HiCmap.png"/></div>
 
 #####  Get .bed file
