@@ -47,7 +47,7 @@ As "chrX" is named as "chr23" and as "23" in the output CDB.txt file. You could 
 awk -v OFS="\t" '{ print "chr"$1,$2,$3,$4,$5}' CDB.txt >CDB.bed
 sed -i  's/chr23/chrX/g' CDB.bed
 ```  
-## 1. Run HiCDB 
+## 1. Run RHiCDB 
 ### Input
 **hicfile:** The directory of all intra-chromosome matrix of a sample. The intra-chromosome matrix must be named as "chr+number.matrix" according to the chromosome order like 'chr1.matrix','chr2.matrix',...,'chr23.matrix'. As HiCDB matches "chr\*.matrix" to recognize the Hi-C matrix, avoid to use the "chr\*.matrix" as the name of other files. The intra-chromosome matrix could be in a dense (a NxN matrix) or sparse (a Kx3 table,Rao et al.) format. hicfile should be set as 'SAMPLE_DIR' when option is "singlemap", list('SAMPLE_DIR1','SAMPLE_DIR2') or  list(c(’SAMPLE1_rep1’,’SAMPLE1_rep2’),c(’SAMPLE2_rep1’,’SAMPLE2_rep2’)) when option is ‘comparemap’. This is required.  
 Dense format contains	the contact	frequencies	of the Hi-C NxN	matrix.  
