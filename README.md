@@ -68,7 +68,7 @@ Sparse format (Rao et al.) has three fields: i, j, and M_i,j. (i and j are writt
 
 **resolution:** resolution of Hi-C matrix. This is required.  
 **chrsizes:** Ordered chromosome sizes of the genome. Optional setting is ‘hg19’, ‘hg38’, ‘mm9’, ‘mm10’ or any other chromosome size files which can be generated following the instructions in annotation/README.md. This is required.  
-**ref:** ref should be set when you want to get a cutoff using a CTCF motif or the option is 'comparemap'. Optional ref is ‘hg19’, ‘hg38’, ‘mm9’, ‘mm10’ or any other custom motif locus files which can be generated from instructions in annotation/README.md. Only ‘hg19’ and ‘hg38’ can be annotated with conservation.  
+**ref:** ref should be set when you want to get a cutoff using a CTCF motif or the option is 'comparemap'. Optional ref is ‘hg19’, ‘hg38’, ‘mm9’, ‘mm10’ or any other custom motif locus files which can be generated from instructions in annotation/README.md. Only ‘hg19’ and ‘hg38’ can be annotated with conservation. To decide the cutoff in other organisms, users could use the motif of other insulators as a reference instead of CTCF. According to our experience, it is reliable to check the CDBs on Hi-C map under several cutoff to decide the cutoff in other organisms. As HiCDB implements visualizations for the Hi-C maps with annotated CDBs and works well under a broad parameter range, it won’t be too hard. The current cutoff in 40kb and 10kb human sample are approximately the half and third quitile of the total local maximum peaks respectively.   
 ### Examples
 #### 1. Output all the local maximum peaks and let customers to decide the cutoff.  
 ```R
