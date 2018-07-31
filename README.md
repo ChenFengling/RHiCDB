@@ -12,7 +12,13 @@ Download RHiCDB_1.0.tar.gz and install in R. RHiCDB depends on pracma,limma,Matr
 ```R
 install.packages("RHiCDB_1.0.tar.gz")
 ```
+OR 
+install RHiCDB with devtools 
+```R
+devtools::install_github("ChenFengling/RHiCDB")
+```
 ### Quick start
+download the test data set with URL https://github.com/ChenFengling/HiCDB/raw/master/testdata.tar.gz
 Unzip the testdata.tar.gz, you will  find the dense format Hi-C data of hESC (Doxin et al.). 
 ```shell
 tar -zxvf testdata.tar.gz
