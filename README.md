@@ -20,7 +20,7 @@ install.packages("RHiCDB_1.0.tar.gz")
 RHiCDB depends on pracma,limma,Matrix,gridExtra,rasterVis and lattice.
 ### Quick start
 Download the test data set with URL https://github.com/ChenFengling/HiCDB/raw/master/testdata.tar.gz .  
-Unzip the testdata.tar.gz, you will  find the dense format Hi-C data of hESC (Doxin et al.). 
+Unzip the testdata.tar.gz, you will  find the dense format Hi-C data of hESC (Doxin et al.) in directory named as 'h1_rep1/'.
 ```shell
 tar -zxvf testdata.tar.gz
 ```
