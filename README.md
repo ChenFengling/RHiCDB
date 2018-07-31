@@ -8,17 +8,18 @@
 <div align=center><img width="580" height="380" src="https://github.com/ChenFengling/RHiCDB/blob/master/images/pipe.png"/></div>
 
 ### Requirements and install
-Download RHiCDB_1.0.tar.gz and install in R. RHiCDB depends on pracma,limma,Matrix,gridExtra,rasterVis and lattice.
-```R
-install.packages("RHiCDB_1.0.tar.gz")
-```
-OR 
-install RHiCDB with devtools 
+Install RHiCDB with devtools 
 ```R
 devtools::install_github("ChenFengling/RHiCDB")
 ```
+OR
+Download RHiCDB_1.0.tar.gz and install in R. 
+```R
+install.packages("RHiCDB_1.0.tar.gz")
+```
+RHiCDB depends on pracma,limma,Matrix,gridExtra,rasterVis and lattice.
 ### Quick start
-download the test data set with URL https://github.com/ChenFengling/HiCDB/raw/master/testdata.tar.gz
+Download the test data set with URL https://github.com/ChenFengling/HiCDB/raw/master/testdata.tar.gz .  
 Unzip the testdata.tar.gz, you will  find the dense format Hi-C data of hESC (Doxin et al.). 
 ```shell
 tar -zxvf testdata.tar.gz
@@ -107,7 +108,7 @@ These output files can be found in custom output directory or default directory 
 **5. LRI.txt:** LRI score for each genomic bin.
 ## 2. Run visHiCDB
 ### Input
-**hicfile:** Hi-C matrix of the intersested chromosome.
+**hicfile:** Hi-C matrix of the intersested chromosome.  
 **CDBfile:** CDBfile sould be a cell array storing the CDB location. The CDB files should be formatted as the output files of function HiCDB.  
 **resolution:** resolution of Hi-C map.  
 **chr,startloc,endloc:** observation locus on Hi-C map.  
