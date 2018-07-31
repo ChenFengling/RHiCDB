@@ -10,6 +10,7 @@
 ### Requirements and install
 Install RHiCDB with devtools 
 ```R
+#install.packages("devtools")
 devtools::install_github("ChenFengling/RHiCDB")
 ```
 OR
