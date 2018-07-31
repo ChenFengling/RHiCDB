@@ -20,19 +20,19 @@ tar -zxvf testdata.tar.gz
 ##### Run RHiCDB to get the CDBs.
 ```R
 library('RHiCDB')
-hicfile='/home/fchen/h1_rep1/'
+hicfile='h1_rep1/'
 resolution=40000
 chrsizes='hg19'
-outdir='/home/fchen/h1_rep1/'
+outdir='h1_rep1/'
 RHiCDB(hicfile,resolution,chrsizes,ref='hg19',outdir=outdir)
 ```
-This will take the  intra-chromosome matrix ('chr1.matrix',...,'chr23.matrix') in '/home/fchen/h1_rep1/' as input and set the resolution as 40000,chrsizes as 'hg19', the CTCF motif ref as 'hg19' and output the contact domain boundaries.   
+This will take the  intra-chromosome matrix ('chr1.matrix',...,'chr23.matrix') in 'h1_rep1/' as input and set the resolution as 40000,chrsizes as 'hg19', the CTCF motif ref as 'hg19' and output the contact domain boundaries.   
 ##### Run visHiCDB to display the region chr17:67100000-71100000.
 ```R
-hicfile='/home/fchen/h1_rep1/chr17.matrix'
+hicfile='h1_rep1/chr17.matrix'
 resolution=40000
-outdir='/home/fchen/h1_rep1'
-CDBfile='/home/fchen/h1_rep1/CDB.txt'
+outdir='h1_rep1'
+CDBfile='h1_rep1/CDB.txt'
 chr=17
 startloc=67100000
 endloc=71100000
