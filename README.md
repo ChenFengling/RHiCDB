@@ -120,7 +120,7 @@ visHiCDB('sample1/chr18.matrix','CDB1.txt',40000,18,25000000,31150000)
 ```
 #### 2. Show differential CDBs on Hi-C maps 
 ```R
-visHiCDB(list('sample1/chr18.matrix','sample2/chr18.mat'),list('CDB1.txt','CDB2.txt'),40000,18,25000000,31150000)
+visHiCDB(list('sample1/chr18.matrix','sample2/chr18.matrix'),list('CDB1.txt','CDB2.txt'),40000,18,25000000,31150000)
 ```
 ### Output(s)
 **HiCmap.pdf：** a pdf containing figure showing CDBs on single Hi-C map or different kinds of CDBs between two Hi-C maps.  
